@@ -3,8 +3,10 @@ package Variables
 import (
 	"fmt"
 	"time"
+	"strconv"
 )
 
+// Se definen las variables de forma global, se puede ver desde otros archivos
 var Nombre string
 var Estado bool
 var Sueldo float32
@@ -21,6 +23,8 @@ func RestoVariables() {
 	fmt.Println(Fecha)
 }
 
-func ConviertoaTexto() {
+func ConviertoaTexto(numero int) (estado bool, texto string) {
+	texto = strconv.Itoa(numero)
+	return true,texto
 
 }
