@@ -5,5 +5,6 @@ import (
 )
 
 func main() {
+	//Variables.MuestroEnteros()
 	Variables.MuestroEnteros()
 }
