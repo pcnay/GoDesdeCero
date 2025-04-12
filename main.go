@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/DevOps-PcNay/GoDesdeCero/Variables"
-	"fmt"
+	"fmt"	
 )
 
 func main() {	
@@ -10,5 +10,8 @@ func main() {
 	//Variables.RestoVariables()
 	estado,cadena := Variables.ConviertoaTexto(652145)
 	fmt.Println("Estado ",estado," Contenido ",cadena)
+	Variables.Condicionales_If()
+	Variables.Switch()
+	
 
 }
