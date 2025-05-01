@@ -6,10 +6,12 @@ import (
 	//"github.com/DevOps-PcNay/GoDesdeCero/For"
 	//"github.com/DevOps-PcNay/GoDesdeCero/Teclado"
 	//"github.com/DevOps-PcNay/GoDesdeCero/Variables"
-	"github.com/DevOps-PcNay/GoDesdeCero/Ejercicios"
+	//"github.com/DevOps-PcNay/GoDesdeCero/Ejercicios"
+	"github.com/DevOps-PcNay/GoDesdeCero/Files"
 )
 
 func main() {
+	//var tabla string
 	//Variables.MuestroEnteros()
 	//Variables.RestoVariables()
 	//estado, cadena := Variables.ConviertoaTexto(652145)
@@ -30,6 +32,12 @@ func main() {
 		For.Iterar_Reverse()
 		For.Iterar_ForContinue()
 	*/
-	Ejercicios.Ingresar_numero(5)
+	//tabla = Ejercicios.Ingresar_numero()
+	//fmt.Println(tabla)
+
+	// Grabando un archivo en el disco duro.
+	// Files.Grabar_tabla()
+	// Files.Suma_tabla()
+	Files.Leo_archivo2()
 
 }

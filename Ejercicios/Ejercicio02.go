@@ -17,12 +17,12 @@ import (
 
 var dato int
 var err error
-var salir bool = true
+var text string // Se modificara para grabar la tabla de numeros en un archivo.
 
-func Ingresar_numero(numero int) {
-
+// func Ingresar_numero(numero int) = Se modifica la funcion para que retorne la tabla de la multiplicacion
+func Ingresar_numero() (contenido_tabla string) {
+	var contador int = 0
 	for {
-
 		fmt.Println("Ingresa el numero -1 = Salir  : ")
 		teclado := bufio.NewScanner(os.Stdin)
 
@@ -37,14 +37,22 @@ func Ingresar_numero(numero int) {
 			break
 		}
 		if dato != 0 {
+			contador++
+
+			if contador > 1 {
+				text += fmt.Sprintf("\n \n")
+			}
+
 			for k := 1; k <= 10; k++ {
-				fmt.Printf(" %d X %d = %d \n", dato, k, (dato * k))
-			} // if dato != 0
+				// Se modificara para que grabe en un archivo.
+				//fmt.Printf(" %d X %d = %d \n", dato, k, (dato * k))
+				// Se utilizara otra instruccion, "Sprintf" para que imprima una cadena la salida del "Printf"
 
-		}
+				text += fmt.Sprintf(" %d x %d = %d \n", dato, k, (dato * k))
+			} // for k := 0; k <= 0...
 
-		//fmt.Println(dato)
+		} //if dato != 0 {
 
 	} // For
-
+	return text
 }
