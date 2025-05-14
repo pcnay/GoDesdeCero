@@ -7,7 +7,8 @@ import (
 	//"github.com/DevOps-PcNay/GoDesdeCero/Teclado"
 	//"github.com/DevOps-PcNay/GoDesdeCero/Variables"
 	//"github.com/DevOps-PcNay/GoDesdeCero/Ejercicios"
-	"github.com/DevOps-PcNay/GoDesdeCero/Files"
+	//"github.com/DevOps-PcNay/GoDesdeCero/Files"
+	"github.com/DevOps-PcNay/GoDesdeCero/Funciones"
 )
 
 func main() {
@@ -38,6 +39,9 @@ func main() {
 	// Grabando un archivo en el disco duro.
 	// Files.Grabar_tabla()
 	// Files.Suma_tabla()
-	Files.Leo_archivo2()
+	//Files.Leo_archivo2()
+
+	// Funciones.Calculos()
+	Funciones.LlamarClosure()
 
 }
