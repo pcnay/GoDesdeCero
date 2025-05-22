@@ -8,7 +8,8 @@ import (
 	//"github.com/DevOps-PcNay/GoDesdeCero/Variables"
 	//"github.com/DevOps-PcNay/GoDesdeCero/Ejercicios"
 	//"github.com/DevOps-PcNay/GoDesdeCero/Files"
-	"github.com/DevOps-PcNay/GoDesdeCero/Funciones"
+	//"github.com/DevOps-PcNay/GoDesdeCero/Funciones"
+	"github.com/DevOps-PcNay/GoDesdeCero/Arreglos_Slices"
 )
 
 func main() {
@@ -43,6 +44,9 @@ func main() {
 
 	// Funciones.Calculos()
 	//Funciones.LlamarClosure()
-	Funciones.Exponencial(2)
+	// Funciones.Exponencial(2)
+	//Arreglos_Slices.MuestroArreglos()
+	//Arreglos_Slices.MuestroSlice()
+	Arreglos_Slices.Capacidad()
 
 }
